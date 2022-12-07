@@ -1,0 +1,29 @@
+_id: req_452f84c6168e4a69906727b76a21336f
+type: Request
+parentId: fld_2cae9e18d43a4bd2a1d787be5a536473
+modified: 1670444680430
+created: 1670444182096
+url: "{{ _.URL }}/posts"
+name: createPosts
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"title":"Titulo",
+    	"content":"Contenido"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669980337832.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

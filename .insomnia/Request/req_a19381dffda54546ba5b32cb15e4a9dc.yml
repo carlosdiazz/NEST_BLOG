@@ -1,0 +1,21 @@
+_id: req_a19381dffda54546ba5b32cb15e4a9dc
+type: Request
+parentId: fld_2cae9e18d43a4bd2a1d787be5a536473
+modified: 1670443493302
+created: 1670443427697
+url: "{{ _.URL }}/posts"
+name: getAllPosts
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1670443427697
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

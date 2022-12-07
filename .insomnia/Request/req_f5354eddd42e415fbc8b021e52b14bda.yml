@@ -1,0 +1,21 @@
+_id: req_f5354eddd42e415fbc8b021e52b14bda
+type: Request
+parentId: fld_2cae9e18d43a4bd2a1d787be5a536473
+modified: 1670443672108
+created: 1670443669991
+url: "{{ _.URL }}/posts/34"
+name: getOnePosts
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1670134701120.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
