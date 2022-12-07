@@ -10,4 +10,6 @@
 $ npm install @nestjs/config
 $ npm install joi
 $ npm install @nestjs/typeorm typeorm pg
+$ npm install class-validator
+$ npm install class-transformer
 ```

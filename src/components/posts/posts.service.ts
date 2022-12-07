@@ -11,19 +11,25 @@ export class PostsService {
     @InjectRepository(Post) private postsRepository: Repository<Post>,
   ) {}
 
-  create(createPostDto: CreatePostDto) {
-    return this.postsRepository.find();
+  async create(data: CreatePostDto) {
+    const newPost = this.postsRepository.create(data);
+    await this.postsRepository.save(newPost);
+    return newPost;
   }
 
   findAll() {
-    return `This action returns all posts`;
+    return this.postsRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} post`;
+  async findOne(id: number) {
+    const post = await this.postsRepository.findOne({ where: { id } });
+    if (!post) {
+      throw new NotFoundException('Este post no existe');
+    }
+    return post;
   }
 
-  update(id: number, updatePostDto: UpdatePostDto) {
+  update(id: number, data: UpdatePostDto) {
     return `This action updates a #${id} post`;
   }
 
