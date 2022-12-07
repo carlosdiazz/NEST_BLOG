@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+
+  postgres:
+    image: postgres:13
+    restart: always
+    environment:
+      - POSTGRES_DB=LOTERIA
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=123456
+    #env_file:
+    #  - docker.env
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=carlos@mail.com
+      - PGADMIN_DEFAULT_PASSWORD=123456
+    ports:
+      - '5050:80'
+    depends_on:
+      - postgres
