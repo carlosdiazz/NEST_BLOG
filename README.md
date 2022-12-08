@@ -12,4 +12,7 @@ $ npm install joi
 $ npm install @nestjs/typeorm typeorm pg
 $ npm install class-validator
 $ npm install class-transformer
+$ npm install @types/bcrypt bcrypt
+$ npm install @nestjs/passport passport @types/passport-local passport-local @types/express
+$ npm install @nestjs/jwt passport-jwt @types/passport-jwt cookie-parser @types/cookie-parser
 ```

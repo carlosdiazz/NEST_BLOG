@@ -29,11 +29,17 @@ export class PostsService {
     return post;
   }
 
-  update(id: number, data: UpdatePostDto) {
-    return `This action updates a #${id} post`;
+  async update(id: number, data: UpdatePostDto) {
+    await this.postsRepository.update(id, data);
+    const dataUpdate = await this.findOne(id);
+    return dataUpdate;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} post`;
+  async remove(id: number) {
+    const deleteResponse = await this.postsRepository.delete(id);
+    if (!deleteResponse.affected) {
+      throw new NotFoundException('Este post no existe');
+    }
+    return deleteResponse;
   }
 }

@@ -36,3 +36,4 @@ lerna-debug.log*
 
 #Carpertas de base de Datos
 postgres_data
+.env
