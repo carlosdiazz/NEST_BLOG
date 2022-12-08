@@ -6,6 +6,7 @@ import { DatabaseModule } from './database/database.module';
 import { PostsModule } from './components/posts/posts.module';
 import { UsersModule } from './components/users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { ProbarTestModule } from './probar-test/probar-test.module';
 import * as Joi from 'joi';
 
 @Module({
@@ -26,6 +27,7 @@ import * as Joi from 'joi';
     PostsModule,
     UsersModule,
     AuthModule,
+    ProbarTestModule,
   ],
   controllers: [AppController],
   providers: [AppService],
