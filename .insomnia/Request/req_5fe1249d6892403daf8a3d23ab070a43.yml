@@ -1,18 +1,19 @@
-_id: req_452f84c6168e4a69906727b76a21336f
+_id: req_5fe1249d6892403daf8a3d23ab070a43
 type: Request
-parentId: fld_2cae9e18d43a4bd2a1d787be5a536473
-modified: 1670515544707
-created: 1670444182096
-url: "{{ _.URL }}/posts"
-name: createPosts
+parentId: fld_0fa107a5c08e406ab0145ed54b428b4b
+modified: 1670512554234
+created: 1670505778445
+url: "{{ _.URL }}/users"
+name: createUser
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"title":"Titulo",
-    	"content":"Contenido"
+    	"email":"carlos1@mail.com",
+    	"name":"Carlos",
+    	"password":"123456"
     }
 parameters: []
 headers:

@@ -1,12 +1,12 @@
-_id: req_452f84c6168e4a69906727b76a21336f
+_id: req_1a02f6d1cee9427ab0689466ef66e83c
 type: Request
-parentId: fld_2cae9e18d43a4bd2a1d787be5a536473
-modified: 1670515544707
-created: 1670444182096
-url: "{{ _.URL }}/posts"
-name: createPosts
+parentId: fld_0fa107a5c08e406ab0145ed54b428b4b
+modified: 1670512545660
+created: 1670505778453
+url: "{{ _.URL }}/users/2"
+name: deleteUser
 description: ""
-method: POST
+method: DELETE
 body:
   mimeType: application/json
   text: |-
@@ -19,7 +19,7 @@ headers:
   - name: Content-Type
     value: application/json
 authentication: {}
-metaSortKey: -1669980337832.25
+metaSortKey: -1669864565366.0625
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

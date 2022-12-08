@@ -1,25 +1,25 @@
-_id: req_452f84c6168e4a69906727b76a21336f
+_id: req_78822e0c487f4aeaa576bcf979ec6eb5
 type: Request
-parentId: fld_2cae9e18d43a4bd2a1d787be5a536473
-modified: 1670515544707
-created: 1670444182096
-url: "{{ _.URL }}/posts"
-name: createPosts
+parentId: fld_6c4e2cd2448c4e9993b04c1a5d6090d0
+modified: 1670515535581
+created: 1670510274670
+url: "{{ _.URL }}/auth/login"
+name: login
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"title":"Titulo",
-    	"content":"Contenido"
+    	"email":"carlos1@mail.com",
+    	"password":"123456"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
 authentication: {}
-metaSortKey: -1669980337832.25
+metaSortKey: -1670510274670
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
